@@ -16,7 +16,7 @@ app.get('/info', function(req, res){
     })
 })
 
-var server = app.listen(port, function() {
+var server = app.listen(port, '0.0.0.0', function() {
     var host = server.address().address;
     var port = server.address().port;
     console.log("API Node listening at http://%s:%s", host, port);
